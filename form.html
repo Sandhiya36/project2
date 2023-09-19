@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Link</title>
+</head>
+<style>
+    .content{
+        max-width: 500px;
+        margin:auto;
+        background-color: rgb(224, 224, 233);
+    }
+    body{
+        background-color: rgb(197, 226, 226);
+    }
+</style>
+<body>
+    <div class="content">
+      <h2>Registeration form</h2>
+      <form action="http://httpbin.org/get",method="get">
+        <fieldset>
+            <p><label for="firstName">FirstName:</label>
+            <input type="firstName" id="firstName" required placeholder="firstName">
+            </p>
+            
+            <p>
+            <label for="lastName">LastName:</label>
+            <input type="lastName" id="lastName" required placeholder="lastName">
+            </p>
+            
+            <p>
+            <label for="mailId">MailId:</label>
+            <input type="email" id="mailId"placeholder='aav@gmail.com'required>
+            </p>
+            <p>
+            <label for="phone">PhoneNumber:</label>
+            <input type="tel" id="phone" placeholder="9999999999" required>
+            </p>
+            <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password"  required>
+                </p>
+                <p>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" >
+                        
+                        <option value="male">Male</option>
+                        <option value="female" >Female</option>
+                        <option value="not to specify">Not to Specify</option></select>
+                </p>
+                <p><label for="language">Language</label>
+                    <select name="language" id="language" >
+                        
+                        <option value="english">English</option>
+                        <option value="Tamil" >Tamil</option>
+                        <option value="malayalam">Malayalam</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="hindi">Hindi</option></select>
+                    </p>
+                <p>
+                    <label for="zipcode">Zipcode</label>
+                    <input type="zipcode" id="zipcode"placeholder='zipcode'required>
+                </p>
+                </p>
+                <fieldset>
+                    <legend><h4>About</h4></legend>
+                    <label for="message">Write About Yourself here...</label>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write About Yourself here..."></textarea>
+                    </p>
+                    <p>
+                        <button type="register">Register</button>
+                        <button type="clear">Clear</button>
+                    </p>
+                   </fieldset> 
+                </fieldset>
+                
+                </form>
+    
+        
+        <br>
+        </div>
+</body>
+</html>
